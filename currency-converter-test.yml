@@ -1,9 +1,9 @@
-api:
-  key: bOv9VzwtvbtNuPhxLT3oZ5Xat8qE8ufB
+currency:
   url: ${API_URL:https://api.apilayer.com/exchangerates_data/convert}
-  
+  api_key: ${API_KEY:bOv9VzwtvbtNuPhxLT3oZ5Xat8qE8ufB}
+
 server:
-  port: 9007
+  port: 9090
 
 spring:
   datasource:
@@ -39,8 +39,4 @@ keycloak:
           patterns:
             - /api/v1/currency/list
             - /api/v1/currency/obtain
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+
